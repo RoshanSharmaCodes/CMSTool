@@ -1,0 +1,16 @@
+.EmailContainer{
+    width: calc(100vw-100px);
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.EmailHeader{
+    padding: 20px;
+    background-color: #00b96b;
+}
+
+.MainHeading{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}

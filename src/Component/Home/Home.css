@@ -1,0 +1,10 @@
+.HomeContainer{
+    width: calc(100vw-100px);
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.HomeHeader{
+    padding: 20px;
+    background-color: #00b96b;
+}

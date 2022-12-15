@@ -1,10 +1,22 @@
 import "./App.css"
-import { Breadcrumb, Layout, Menu, theme, ConfigProvider } from "antd"
-import { HomeOutlined, FormOutlined,BookOutlined, EditOutlined, MailOutlined, UnorderedListOutlined,RadarChartOutlined,TeamOutlined,StarOutlined, RiseOutlined,CalendarOutlined } from  "@ant-design/icons"
+import { Breadcrumb, Layout, Menu, theme, ConfigProvider, Avatar } from "antd"
+import { HomeOutlined, FormOutlined,BookOutlined, EditOutlined, MailOutlined,UserOutlined, UnorderedListOutlined,RadarChartOutlined,TeamOutlined,StarOutlined, RiseOutlined,CalendarOutlined } from  "@ant-design/icons"
 import { useState } from "react"
+import { Content } from "antd/es/layout/layout"
+import Email from "./Component/Email/Email"
+import Analytics from "./Component/Analytics/Analytics"
+import Bookmarks from "./Component/Bookmarks/Bookmarks"
+import Create from "./Component/Create Content/Create"
+import Friends from "./Component/Friends/Friends"
+import Home from "./Component/Home/Home"
+import Reminder from "./Component/Reminder/Reminder"
+import Todo from "./Component/Todo/Todo"
+import Trending from "./Component/Trending/Trending"
+import Workbook from "./Component/Workbook/Workbook"
+
 
 function App() {
-  const { Header, Content, Footer, Sider } = Layout
+  const { Sider } = Layout
   function getItem(label, key, icon, children, type) {
     return {
       key,
@@ -40,15 +52,15 @@ function App() {
       >
         <Layout style={{ minHeight: "100vh" }}>
           <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-            <div
-              style={{
-                height: 32,
-                margin: 16,
-                background: "rgba(255, 255, 255, 0.2)",
-              }}
-            />
+            <div className="profileDiv">
+            <Avatar size={64} icon={<UserOutlined />} shape="square" style={{backgroundColor:"#bababa",display:"flex",justifyContent:"center",marginTop:"10px"}}/>
+            </div>
+            
             <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline" items={items} />
           </Sider>
+          <Content>
+          
+          </Content>
         </Layout>
       </ConfigProvider>
     </>
