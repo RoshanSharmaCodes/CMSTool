@@ -1,7 +1,7 @@
 import { Table } from "antd"
 import "./Content.css"
 
-const Content = () => {
+const MyContent = () => {
   return <div className="ContentContainer">
     <div className="ContentHeader">
      <span className="MainHeading">Content</span>
@@ -12,4 +12,4 @@ const Content = () => {
   </div>
 }
 
-export default Content
+export default MyContent
